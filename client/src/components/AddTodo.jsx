@@ -10,7 +10,7 @@ export default function AddTodo() {
   const Addtodo = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/todo", {
+      const response = await fetch("https://mern-todo-dkan.onrender.com/todo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

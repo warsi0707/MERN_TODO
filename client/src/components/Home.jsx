@@ -10,7 +10,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   const getData = async () => {
-    const response = await fetch("https://mern-todo-dkan.onrender.com/todos", {
+    const response = await fetch("http://localhost:3000/todos", {
       method: "GET",
     });
     const result = await response.json();
@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
   const deleteTodo = async (id) => {
     try {
-      const response = await fetch(`https://mern-todo-dkan.onrender.com/todo/${id}`, {
+      const response = await fetch(`http://localhost:3000/todo/${id}`, {
         method: "DELETE",
         credentials: "include",
       });

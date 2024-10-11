@@ -11,7 +11,7 @@ export default function Navbar() {
 
   try {
     const user = async () => {
-      const response = await fetch("https://mern-todo-dkan.onrender.com/profile", {
+      const response = await fetch("http://localhost:3000/profile", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -36,7 +36,7 @@ export default function Navbar() {
 
   const logout = async () => {
     try {
-      const response = await fetch("https://mern-todo-dkan.onrender.com/logout", {
+      const response = await fetch("http://localhost:3000/logout", {
         method: "POST",
         credentials: "include",
       });

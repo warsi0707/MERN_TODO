@@ -12,7 +12,7 @@ export default function Signin() {
   const Signin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://mern-todo-dkan.onrender.com/signin", {
+      const response = await fetch("http://localhost:3000/signin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
